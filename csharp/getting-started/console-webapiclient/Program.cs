@@ -30,6 +30,7 @@ namespace WebAPIClient
 
         private static async Task<List<Repository>> ProcessRepositories()
         {
+            Console.WriteLine("ProcessRepositories start");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
