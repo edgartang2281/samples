@@ -14,6 +14,7 @@ namespace WebAPIClient
         static async Task Main(string[] args)
         {
             var repositories = await ProcessRepositories();
+            Console.WriteLine("test repo");
 
             foreach (var repo in repositories)
             {
